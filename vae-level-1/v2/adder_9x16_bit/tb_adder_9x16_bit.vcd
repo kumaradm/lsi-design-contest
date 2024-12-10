@@ -1,0 +1,65 @@
+$date
+	Sat Dec 07 23:12:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_adder_9x16_bit $end
+$var wire 16 ! out [15:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 16 # in1 [15:0] $end
+$var reg 16 $ in2 [15:0] $end
+$var reg 16 % in3 [15:0] $end
+$var reg 16 & in4 [15:0] $end
+$var reg 16 ' in5 [15:0] $end
+$var reg 16 ( in6 [15:0] $end
+$var reg 16 ) in7 [15:0] $end
+$var reg 16 * in8 [15:0] $end
+$var reg 16 + in9 [15:0] $end
+$scope module adder $end
+$var wire 16 , in1 [15:0] $end
+$var wire 16 - in2 [15:0] $end
+$var wire 16 . in3 [15:0] $end
+$var wire 16 / in4 [15:0] $end
+$var wire 16 0 in5 [15:0] $end
+$var wire 16 1 in6 [15:0] $end
+$var wire 16 2 in7 [15:0] $end
+$var wire 16 3 in8 [15:0] $end
+$var wire 16 4 in9 [15:0] $end
+$var wire 16 5 out [15:0] $end
+$var parameter 32 6 WIDTH $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 6
+b10000 "
+$end
+#0
+$dumpvars
+b1001000000000000 5
+b1000000000000 4
+b1000000000000 3
+b1000000000000 2
+b1000000000000 1
+b1000000000000 0
+b1000000000000 /
+b1000000000000 .
+b1000000000000 -
+b1000000000000 ,
+b1000000000000 +
+b1000000000000 *
+b1000000000000 )
+b1000000000000 (
+b1000000000000 '
+b1000000000000 &
+b1000000000000 %
+b1000000000000 $
+b1000000000000 #
+b1001000000000000 !
+$end
+#10

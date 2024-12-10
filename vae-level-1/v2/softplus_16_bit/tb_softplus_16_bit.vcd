@@ -1,0 +1,443 @@
+$date
+	Tue Dec 10 13:21:46 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_softplus_16_bit $end
+$var wire 16 ! y [15:0] $end
+$var parameter 32 " N $end
+$var parameter 32 # Q $end
+$var reg 1 $ clk $end
+$var reg 1 % start $end
+$var reg 16 & x [15:0] $end
+$scope module comp1 $end
+$var wire 1 $ clk $end
+$var wire 1 % start $end
+$var wire 16 ' x [15:0] $end
+$var wire 16 ( y [15:0] $end
+$var wire 16 ) slope [15:0] $end
+$var wire 1 * seg_9 $end
+$var wire 1 + seg_8 $end
+$var wire 1 , seg_7 $end
+$var wire 1 - seg_6 $end
+$var wire 1 . seg_5 $end
+$var wire 1 / seg_4 $end
+$var wire 1 0 seg_3 $end
+$var wire 1 1 seg_2 $end
+$var wire 1 2 seg_1 $end
+$var wire 16 3 res_mult [15:0] $end
+$var wire 1 4 nextState $end
+$var wire 16 5 intersect [15:0] $end
+$var parameter 32 6 N $end
+$var parameter 32 7 Q $end
+$var parameter 1 8 STATE_0 $end
+$var parameter 1 9 STATE_1 $end
+$var parameter 16 : abscissas_1 $end
+$var parameter 16 ; abscissas_2 $end
+$var parameter 16 < abscissas_3 $end
+$var parameter 16 = abscissas_4 $end
+$var parameter 16 > abscissas_5 $end
+$var parameter 16 ? abscissas_6 $end
+$var parameter 16 @ abscissas_7 $end
+$var parameter 16 A abscissas_8 $end
+$var parameter 16 B abscissas_9 $end
+$var parameter 16 C intersect_1 $end
+$var parameter 16 D intersect_2 $end
+$var parameter 16 E intersect_3 $end
+$var parameter 16 F intersect_4 $end
+$var parameter 16 G intersect_5 $end
+$var parameter 16 H intersect_6 $end
+$var parameter 16 I intersect_7 $end
+$var parameter 16 J intersect_8 $end
+$var parameter 16 K slope_1 $end
+$var parameter 16 L slope_2 $end
+$var parameter 16 M slope_3 $end
+$var parameter 16 N slope_4 $end
+$var parameter 16 O slope_5 $end
+$var parameter 16 P slope_6 $end
+$var parameter 16 Q slope_7 $end
+$var parameter 16 R slope_8 $end
+$var reg 1 S state $end
+$scope module m1 $end
+$var wire 16 T a [15:0] $end
+$var wire 16 U b [15:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % start $end
+$var wire 15 V quantized_result_2cmp [14:0] $end
+$var wire 15 W quantized_result [14:0] $end
+$var wire 16 X q_result [15:0] $end
+$var wire 1 Y overflow $end
+$var wire 2 Z nextState [1:0] $end
+$var wire 16 [ multiplier [15:0] $end
+$var wire 16 \ multiplicand [15:0] $end
+$var wire 32 ] f_result [31:0] $end
+$var wire 1 ^ busy $end
+$var wire 16 _ b_2cmp [15:0] $end
+$var wire 16 ` a_2cmp [15:0] $end
+$var parameter 32 a N $end
+$var parameter 32 b Q $end
+$var parameter 2 c STATE_0 $end
+$var parameter 2 d STATE_1 $end
+$var reg 2 e state [1:0] $end
+$upscope $end
+$scope module s1 $end
+$var wire 16 f a [15:0] $end
+$var wire 16 g b [15:0] $end
+$var wire 1 h clk $end
+$var wire 1 i rst $end
+$var wire 1 2 y $end
+$var wire 4 j int_b [15:12] $end
+$var wire 4 k int_a [15:12] $end
+$var wire 12 l frac_b [11:0] $end
+$var wire 12 m frac_a [11:0] $end
+$var parameter 32 n N $end
+$var parameter 32 o Q $end
+$upscope $end
+$scope module s2 $end
+$var wire 16 p a [15:0] $end
+$var wire 16 q b [15:0] $end
+$var wire 1 r clk $end
+$var wire 1 s rst $end
+$var wire 1 1 y $end
+$var wire 4 t int_b [15:12] $end
+$var wire 4 u int_a [15:12] $end
+$var wire 12 v frac_b [11:0] $end
+$var wire 12 w frac_a [11:0] $end
+$var parameter 32 x N $end
+$var parameter 32 y Q $end
+$upscope $end
+$scope module s3 $end
+$var wire 16 z a [15:0] $end
+$var wire 16 { b [15:0] $end
+$var wire 1 | clk $end
+$var wire 1 } rst $end
+$var wire 1 0 y $end
+$var wire 4 ~ int_b [15:12] $end
+$var wire 4 !" int_a [15:12] $end
+$var wire 12 "" frac_b [11:0] $end
+$var wire 12 #" frac_a [11:0] $end
+$var parameter 32 $" N $end
+$var parameter 32 %" Q $end
+$upscope $end
+$scope module s4 $end
+$var wire 16 &" a [15:0] $end
+$var wire 16 '" b [15:0] $end
+$var wire 1 (" clk $end
+$var wire 1 )" rst $end
+$var wire 1 / y $end
+$var wire 4 *" int_b [15:12] $end
+$var wire 4 +" int_a [15:12] $end
+$var wire 12 ," frac_b [11:0] $end
+$var wire 12 -" frac_a [11:0] $end
+$var parameter 32 ." N $end
+$var parameter 32 /" Q $end
+$upscope $end
+$scope module s5 $end
+$var wire 16 0" a [15:0] $end
+$var wire 16 1" b [15:0] $end
+$var wire 1 2" clk $end
+$var wire 1 3" rst $end
+$var wire 1 . y $end
+$var wire 4 4" int_b [15:12] $end
+$var wire 4 5" int_a [15:12] $end
+$var wire 12 6" frac_b [11:0] $end
+$var wire 12 7" frac_a [11:0] $end
+$var parameter 32 8" N $end
+$var parameter 32 9" Q $end
+$upscope $end
+$scope module s6 $end
+$var wire 16 :" a [15:0] $end
+$var wire 16 ;" b [15:0] $end
+$var wire 1 <" clk $end
+$var wire 1 =" rst $end
+$var wire 1 - y $end
+$var wire 4 >" int_b [15:12] $end
+$var wire 4 ?" int_a [15:12] $end
+$var wire 12 @" frac_b [11:0] $end
+$var wire 12 A" frac_a [11:0] $end
+$var parameter 32 B" N $end
+$var parameter 32 C" Q $end
+$upscope $end
+$scope module s7 $end
+$var wire 16 D" a [15:0] $end
+$var wire 16 E" b [15:0] $end
+$var wire 1 F" clk $end
+$var wire 1 G" rst $end
+$var wire 1 , y $end
+$var wire 4 H" int_b [15:12] $end
+$var wire 4 I" int_a [15:12] $end
+$var wire 12 J" frac_b [11:0] $end
+$var wire 12 K" frac_a [11:0] $end
+$var parameter 32 L" N $end
+$var parameter 32 M" Q $end
+$upscope $end
+$scope module s8 $end
+$var wire 16 N" a [15:0] $end
+$var wire 16 O" b [15:0] $end
+$var wire 1 P" clk $end
+$var wire 1 Q" rst $end
+$var wire 1 + y $end
+$var wire 4 R" int_b [15:12] $end
+$var wire 4 S" int_a [15:12] $end
+$var wire 12 T" frac_b [11:0] $end
+$var wire 12 U" frac_a [11:0] $end
+$var parameter 32 V" N $end
+$var parameter 32 W" Q $end
+$upscope $end
+$scope module s9 $end
+$var wire 16 X" a [15:0] $end
+$var wire 16 Y" b [15:0] $end
+$var wire 1 Z" clk $end
+$var wire 1 [" rst $end
+$var wire 1 * y $end
+$var wire 4 \" int_b [15:12] $end
+$var wire 4 ]" int_a [15:12] $end
+$var wire 12 ^" frac_b [11:0] $end
+$var wire 12 _" frac_a [11:0] $end
+$var parameter 32 `" N $end
+$var parameter 32 a" Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1100 a"
+b10000 `"
+b1100 W"
+b10000 V"
+b1100 M"
+b10000 L"
+b1100 C"
+b10000 B"
+b1100 9"
+b10000 8"
+b1100 /"
+b10000 ."
+b1100 %"
+b10000 $"
+b1100 y
+b10000 x
+b1100 o
+b10000 n
+b1 d
+b0 c
+b1100 b
+b10000 a
+b111111101000 R
+b111110011001 Q
+b111001011110 P
+b101011000001 O
+b10100111110 N
+b110100001 M
+b1100110 L
+b10111 K
+b10010110 J
+b111111010 I
+b10110101010 H
+b101100010111 G
+b101100010111 F
+b10110101010 E
+b111111010 D
+b10010110 C
+b110000000000000 B
+b100100000000000 A
+b11000000000000 @
+b1100000000000 ?
+b0 >
+b1110100000000000 =
+b1101000000000000 <
+b1011100000000000 ;
+b1010000000000000 :
+19
+08
+b1100 7
+b10000 6
+b1100 #
+b10000 "
+$end
+#0
+$dumpvars
+b0 _"
+b0 ^"
+b10 ]"
+b110 \"
+z["
+zZ"
+b110000000000000 Y"
+b10000000000000 X"
+b0 U"
+b100000000000 T"
+b10 S"
+b100 R"
+zQ"
+zP"
+b100100000000000 O"
+b10000000000000 N"
+b0 K"
+b0 J"
+b10 I"
+b11 H"
+zG"
+zF"
+b11000000000000 E"
+b10000000000000 D"
+b0 A"
+b100000000000 @"
+b10 ?"
+b1 >"
+z="
+z<"
+b1100000000000 ;"
+b10000000000000 :"
+b0 7"
+b0 6"
+b10 5"
+b0 4"
+z3"
+z2"
+b0 1"
+b10000000000000 0"
+b0 -"
+b100000000000 ,"
+b10 +"
+b1110 *"
+z)"
+z("
+b1110100000000000 '"
+b10000000000000 &"
+b0 #"
+b0 ""
+b10 !"
+b1101 ~
+z}
+z|
+b1101000000000000 {
+b10000000000000 z
+b0 w
+b100000000000 v
+b10 u
+b1011 t
+zs
+zr
+b1011100000000000 q
+b10000000000000 p
+b0 m
+b0 l
+b10 k
+b1010 j
+zi
+zh
+b1010000000000000 g
+b10000000000000 f
+bx e
+bx `
+bx _
+x^
+bx ]
+bx \
+bx [
+bx Z
+xY
+bx X
+bx W
+bx V
+b10000000000000 U
+bx T
+xS
+bx 5
+x4
+bx 3
+12
+11
+10
+1/
+1.
+1-
+0,
+0+
+0*
+bx )
+bx (
+b10000000000000 '
+b10000000000000 &
+1%
+0$
+bx !
+$end
+#5000
+b1110010111100000000000000 ]
+b111001011110 \
+b111000110100010 `
+1^
+b10110101010 5
+b111001011110 )
+b111001011110 T
+b1 Z
+b110000000000000 _
+b10000000000000 [
+14
+b0 e
+0S
+1$
+#10000
+0$
+0%
+#15000
+b10001001100110 !
+b10001001100110 (
+0^
+b110001101000100 V
+0Y
+b1110010111100 W
+b1110010111100 3
+b1110010111100 X
+1S
+b1 e
+1$
+#20000
+0$
+#25000
+1$
+#30000
+0$
+#35000
+1$
+#40000
+0$
+#45000
+1$
+#50000
+0$
+#55000
+1$
+#60000
+0$
+#65000
+1$
+#70000
+0$
+#75000
+1$
+#80000
+0$
+#85000
+1$
+#90000
+0$
+#95000
+1$
+#100000
+0$
+#105000
+1$
+#110000
+0$
+#115000
+1$
+#120000
+0$

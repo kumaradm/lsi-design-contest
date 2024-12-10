@@ -1,0 +1,61 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002bb5939bcf0 .scope module, "adder_9x16_bit" "adder_9x16_bit" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "in1";
+    .port_info 1 /INPUT 16 "in2";
+    .port_info 2 /INPUT 16 "in3";
+    .port_info 3 /INPUT 16 "in4";
+    .port_info 4 /INPUT 16 "in5";
+    .port_info 5 /INPUT 16 "in6";
+    .port_info 6 /INPUT 16 "in7";
+    .port_info 7 /INPUT 16 "in8";
+    .port_info 8 /INPUT 16 "in9";
+    .port_info 9 /OUTPUT 16 "out";
+P_000002bb592565a0 .param/l "WIDTH" 0 2 2, +C4<00000000000000000000000000010000>;
+v000002bb59222de0_0 .net *"_ivl_0", 15 0, L_000002bb592a0a70;  1 drivers
+v000002bb59222c30_0 .net *"_ivl_10", 15 0, L_000002bb592a01b0;  1 drivers
+v000002bb59223230_0 .net *"_ivl_12", 15 0, L_000002bb592a0d90;  1 drivers
+v000002bb592538a0_0 .net *"_ivl_2", 15 0, L_000002bb592a0430;  1 drivers
+v000002bb59253940_0 .net *"_ivl_4", 15 0, L_000002bb592a0750;  1 drivers
+v000002bb592539e0_0 .net *"_ivl_6", 15 0, L_000002bb592a09d0;  1 drivers
+v000002bb59253a80_0 .net *"_ivl_8", 15 0, L_000002bb592a0c50;  1 drivers
+o000002bb592570f8 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253b20_0 .net "in1", 15 0, o000002bb592570f8;  0 drivers
+o000002bb59257128 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253bc0_0 .net "in2", 15 0, o000002bb59257128;  0 drivers
+o000002bb59257158 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253c60_0 .net "in3", 15 0, o000002bb59257158;  0 drivers
+o000002bb59257188 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253d00_0 .net "in4", 15 0, o000002bb59257188;  0 drivers
+o000002bb592571b8 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253da0_0 .net "in5", 15 0, o000002bb592571b8;  0 drivers
+o000002bb592571e8 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253e40_0 .net "in6", 15 0, o000002bb592571e8;  0 drivers
+o000002bb59257218 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253ee0_0 .net "in7", 15 0, o000002bb59257218;  0 drivers
+o000002bb59257248 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59253f80_0 .net "in8", 15 0, o000002bb59257248;  0 drivers
+o000002bb59257278 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v000002bb59254020_0 .net "in9", 15 0, o000002bb59257278;  0 drivers
+v000002bb592540c0_0 .net "out", 15 0, L_000002bb592a0bb0;  1 drivers
+L_000002bb592a0a70 .arith/sum 16, o000002bb592570f8, o000002bb59257128;
+L_000002bb592a0430 .arith/sum 16, L_000002bb592a0a70, o000002bb59257158;
+L_000002bb592a0750 .arith/sum 16, L_000002bb592a0430, o000002bb59257188;
+L_000002bb592a09d0 .arith/sum 16, L_000002bb592a0750, o000002bb592571b8;
+L_000002bb592a0c50 .arith/sum 16, L_000002bb592a09d0, o000002bb592571e8;
+L_000002bb592a01b0 .arith/sum 16, L_000002bb592a0c50, o000002bb59257218;
+L_000002bb592a0d90 .arith/sum 16, L_000002bb592a01b0, o000002bb59257248;
+L_000002bb592a0bb0 .arith/sum 16, L_000002bb592a0d90, o000002bb59257278;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "adder_9x16_bit.v";

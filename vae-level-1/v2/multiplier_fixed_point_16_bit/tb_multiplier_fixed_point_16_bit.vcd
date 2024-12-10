@@ -1,0 +1,101 @@
+$date
+	Tue Dec 10 12:29:32 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_multiplier_fixed_point_16_bit $end
+$var wire 16 ! y [15:0] $end
+$var wire 1 " of $end
+$var parameter 32 # N $end
+$var parameter 32 $ Q $end
+$var reg 1 % clk $end
+$var reg 1 & start $end
+$var reg 16 ' x1 [15:0] $end
+$var reg 16 ( x2 [15:0] $end
+$scope module comp1 $end
+$var wire 16 ) a [15:0] $end
+$var wire 16 * b [15:0] $end
+$var wire 1 % clk $end
+$var wire 1 & start $end
+$var wire 15 + quantized_result_2cmp [14:0] $end
+$var wire 15 , quantized_result [14:0] $end
+$var wire 16 - q_result [15:0] $end
+$var wire 1 " overflow $end
+$var wire 2 . nextState [1:0] $end
+$var wire 16 / multiplier [15:0] $end
+$var wire 16 0 multiplicand [15:0] $end
+$var wire 32 1 f_result [31:0] $end
+$var wire 1 2 busy $end
+$var wire 16 3 b_2cmp [15:0] $end
+$var wire 16 4 a_2cmp [15:0] $end
+$var parameter 32 5 N $end
+$var parameter 32 6 Q $end
+$var parameter 2 7 STATE_0 $end
+$var parameter 2 8 STATE_1 $end
+$var reg 2 9 state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 8
+b0 7
+b1100 6
+b10000 5
+b1100 $
+b10000 #
+$end
+#0
+$dumpvars
+bx 9
+bx 4
+bx 3
+x2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+b11000000000110 *
+b1000000000000 )
+b11000000000110 (
+b1000000000000 '
+1&
+0%
+x"
+bx !
+$end
+#5
+b11000000000110000000000000 1
+12
+b1 .
+b111000000000000 4
+b100111111111010 3
+b1000000000000 0
+b11000000000110 /
+b0 9
+1%
+#10
+0%
+0&
+#15
+02
+b100111111111010 +
+0"
+b11000000000110 ,
+b11000000000110 !
+b11000000000110 -
+b1 9
+1%
+#20
+0%
+#25
+1%
+#30
+0%
